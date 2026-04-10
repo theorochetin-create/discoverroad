@@ -70,3 +70,9 @@ footer {
     margin-top: 50px;
 }
 
+.about {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    line-height: 1.6;
+}
