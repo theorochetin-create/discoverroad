@@ -89,3 +89,13 @@ section {
     text-align: left;
     line-height: 1.7;
 }
+
+.article {
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 30px;
+    background: #111;
+    border-radius: 10px;
+    line-height: 1.7;
+    text-align: left;
+}
