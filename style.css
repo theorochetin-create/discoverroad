@@ -1,10 +1,12 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: #050505;
+    background: linear-gradient(to bottom, #050505, #0a0f1a);
     color: #ffffff;
+    font-size: 18px;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -15,6 +17,7 @@ header {
 
 header h1 {
     color: #a855f7;
+    font-size: 28px;
 }
 
 nav a {
@@ -27,18 +30,23 @@ nav a:hover {
     color: #a855f7;
 }
 
+/* HERO (page accueil) */
 .hero {
     text-align: center;
-    padding: 120px 20px;
+    padding: 150px 20px;
+    background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
 }
 
 .hero h2 {
     font-size: 50px;
-    background: linear-gradient(90deg, #a855f7, #7c3aed);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 20px rgba(0,0,0,0.8);
 }
 
+.hero p {
+    font-size: 20px;
+}
+
+/* BOUTONS */
 .btn {
     background: linear-gradient(90deg, #a855f7, #7c3aed);
     padding: 12px 25px;
@@ -49,47 +57,57 @@ nav a:hover {
     margin-top: 20px;
 }
 
+/* CONTENEUR */
 .container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
+/* CARTES */
 .card {
     background: #111;
     padding: 25px;
     margin: 15px;
     border-radius: 12px;
     width: 280px;
+    transition: 0.3s;
 }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #111;
-    margin-top: 50px;
-}
-
-.about {
-    max-width: 800px;
-    margin: 60px auto;
-    text-align: center;
-    line-height: 1.6;
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card .btn {
     margin-top: 10px;
-    display: inline-block;
 }
 
+/* TEXTE */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+/* SECTION GÉNÉRALE */
 section {
-    max-width: 800px;
+    max-width: 900px;
     margin: 60px auto;
     padding: 20px;
-    text-align: left;
-    line-height: 1.7;
 }
 
+/* ARTICLE */
 .article {
     max-width: 800px;
     margin: 60px auto;
@@ -97,5 +115,21 @@ section {
     background: #111;
     border-radius: 10px;
     line-height: 1.7;
-    text-align: left;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+/* ABOUT */
+.about {
+    max-width: 800px;
+    margin: 60px auto;
+    text-align: center;
+    line-height: 1.7;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111;
+    margin-top: 50px;
 }
